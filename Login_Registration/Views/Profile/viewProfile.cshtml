@@ -1,0 +1,52 @@
+﻿@model Login_Registration.Models.Profile
+
+@{
+    ViewBag.Title = "viewProfile";
+}
+
+<h2>viewProfile</h2>
+
+<h3>Hello: </h3>@HttpContext.Current.Session["userID"].ToString()
+<h4>@Html.ActionLink("Edit", "LogOut", "Home") </h4>
+<fieldset>
+    <legend>Profile</legend>
+
+    <div class="display-label">Email</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.email)
+    </div>
+
+    <div class="display-label">Activity</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.activity)
+    </div>
+
+    <div class="display-label">Address1</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.address1)
+    </div>
+
+    <div class="display-label">AttendedEvent</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.attendedEvent)
+    </div>
+
+    <div class="display-label">Phone</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.phone)
+    </div>
+
+    <div class="display-label">Address2</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.address2)
+    </div>
+
+    <div class="display-label">Country</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.country)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "editProfile", new { id=Model.profileID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

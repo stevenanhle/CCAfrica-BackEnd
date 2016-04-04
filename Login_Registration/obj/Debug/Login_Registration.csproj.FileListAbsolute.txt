@@ -1,0 +1,7 @@
+D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\obj\Debug\Login_Registration.csprojResolveAssemblyReference.cache
+D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\bin\Login_Registration.dll
+D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\bin\Login_Registration.pdb
+D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\bin\EntityFramework.dll
+D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\bin\EntityFramework.xml
+D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\obj\Debug\Login_Registration.dll
+D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\obj\Debug\Login_Registration.pdb
