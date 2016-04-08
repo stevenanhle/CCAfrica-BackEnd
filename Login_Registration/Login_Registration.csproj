@@ -78,12 +78,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\DocumentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PayPalController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Document.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\MyPaypal.cs" />
     <Compile Include="Models\MakePayment.cs" />
@@ -118,6 +120,7 @@
     <Content Include="Content\themes\base\jquery.ui.slider.css" />
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Files_Documents\index.html" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
@@ -195,6 +198,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\PayPal\PaymentWithCreditCard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Files_Documents\Assignment1.pdf" />
+    <None Include="Files_Documents\Learning-PHP-MySQL-JavaScript-CSS-HTML5-3rd-Edition.pdf" />
+    <None Include="Files_Documents\sams-asp-net-4-unleashed-oct-2010.pdf" />
+    <Content Include="Views\Document\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\AdminIndex.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
