@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "ViewPage1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>ViewPage1</h2>
+
+
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm("PaymentWithCreditCard", "Paypal", FormMethod.Post))
+{
+    <form action="/" method="post">
+ 
+    Membership Fee :<input type="text" name="itemPrice" />
+ 
+    <input type="submit" value="Submit" />
+ 
+    </form>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

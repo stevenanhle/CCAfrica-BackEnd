@@ -26,11 +26,6 @@ namespace Login_Registration.Controllers
                 return View();
             }
 
-            public ActionResult Home()
-            {
-                return View();
-            }
-
             [HttpPost, ValidateInput(false)]
             public ActionResult LogOn(Login model)
             {
@@ -38,9 +33,11 @@ namespace Login_Registration.Controllers
                 {
                     if (model.IsUserExist(model.email, model.password))
                     {
+                       
                         ViewBag.UserName = model.email;
                         Session["userID"] = model.email;
                         FormsAuthentication.RedirectFromLoginPage(model.email, false);
+                        FormsAuthentication.SetAuthCookie(model.email, false);
                         return RedirectToAction("viewProfile", "Profile");
                     }
                     else
@@ -54,15 +51,14 @@ namespace Login_Registration.Controllers
             
             public ActionResult LogOut()
             {
+                FormsAuthentication.SignOut();
                 Session.Remove("userID");
                 Session.RemoveAll();
                 return RedirectToAction("LogOn", "Home");
             }
 
-
-
             [HttpPost, ValidateInput(false)]
-            public ActionResult Register(Register model)
+            public ActionResult Register(Register model, string ispay)
             {
 
                 if (ModelState.IsValid)
@@ -73,7 +69,10 @@ namespace Login_Registration.Controllers
                     {
                         if (model.Insert())
                         {
+                            if(ispay=="false")
                             return RedirectToAction("viewProfile", "Profile");
+                             if(ispay=="true")
+                            return RedirectToAction("Index", "Paypal");
                         }
                         else
                         {

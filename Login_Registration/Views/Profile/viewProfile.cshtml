@@ -7,7 +7,7 @@
 <h2>viewProfile</h2>
 
 <h3>Hello: </h3>@HttpContext.Current.Session["userID"].ToString()
-<h4>@Html.ActionLink("Edit", "LogOut", "Home") </h4>
+<h4>@Html.ActionLink("Sign Out", "LogOut", "Home") </h4>
 <fieldset>
     <legend>Profile</legend>
 
@@ -45,8 +45,11 @@
     <div class="display-field">
         @Html.DisplayFor(model => model.country)
     </div>
+    <div>
+        @Html.ActionLink("Become a member now", "Index","Paypal", new { id=Model.profileID },null) 
+    </div>
 </fieldset>
 <p>
-    @Html.ActionLink("Edit", "editProfile", new { id=Model.profileID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit Your Profile", "editProfile", new { id=Model.profileID }) 
+    
 </p>

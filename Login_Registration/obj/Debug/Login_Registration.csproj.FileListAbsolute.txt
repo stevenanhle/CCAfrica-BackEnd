@@ -5,3 +5,16 @@ D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\bin\EntityFram
 D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\bin\EntityFramework.xml
 D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\obj\Debug\Login_Registration.dll
 D:\MvcMusicStore-MVCProject\Login_Registration\Login_Registration\obj\Debug\Login_Registration.pdb
+D:\Login_Registration\Login_Registration\bin\Login_Registration.dll
+D:\Login_Registration\Login_Registration\bin\Login_Registration.pdb
+D:\Login_Registration\Login_Registration\bin\EntityFramework.dll
+D:\Login_Registration\Login_Registration\bin\log4net.dll
+D:\Login_Registration\Login_Registration\bin\Newtonsoft.Json.dll
+D:\Login_Registration\Login_Registration\bin\PayPal.dll
+D:\Login_Registration\Login_Registration\bin\EntityFramework.xml
+D:\Login_Registration\Login_Registration\bin\log4net.xml
+D:\Login_Registration\Login_Registration\bin\Newtonsoft.Json.xml
+D:\Login_Registration\Login_Registration\bin\PayPal.xml
+D:\Login_Registration\Login_Registration\obj\Debug\Login_Registration.csprojResolveAssemblyReference.cache
+D:\Login_Registration\Login_Registration\obj\Debug\Login_Registration.dll
+D:\Login_Registration\Login_Registration\obj\Debug\Login_Registration.pdb

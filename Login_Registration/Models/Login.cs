@@ -85,6 +85,10 @@ namespace Login_Registration.Models
         [DisplayName("Verification Code:")]
         public string Captcha { get; set; }
 
+        [Required(ErrorMessage = "You need to choose purchase now or later")]
+        [DisplayName("Become our member:")]
+        public Boolean purchaseMembership { get; set; }
+
         public bool IsUserExist(string email)
         {
             bool flag = false;

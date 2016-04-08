@@ -65,7 +65,13 @@
             @Html.EditorFor(model => model.Captcha)
            <span>@Html.ValidationMessageFor(model => model.Captcha)</span>
         </div>
-
+        <div>
+            <p>Do you want to become member and pay now</p>
+            <form action="">
+              <input type="radio" name="ispay" value="true"> Yes<br>
+              <input type="radio" name="ispay" value="false"> No<br />
+            </form>
+        </div>
         <p>
             <input type="submit" value="Register"  />
             <input type="button" value="Cancel" />
@@ -74,5 +80,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+   
 </div>
