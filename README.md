@@ -30,3 +30,9 @@ THINGS A MEMBER USER CAN DO BUT NON_MEMBER USER CANNOT DO
 
 PDF reports and files:
 - I created two functions. One function allows users can see pdf file within Chrome browser before download. Another function is file download. Both of them work so far.
+
+
+THINGS STILL NOT DONE YET:
+- Allow one user can search and see another user's profile ( May be a little tricky task, need 3 hours to done)
+- Allow admin of the webiste can do everyting he wants. This part is simple.
+- 
