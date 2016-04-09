@@ -33,6 +33,6 @@ PDF reports and files:
 
 
 THINGS STILL NOT DONE YET:
-- Allow one user can search and see another user's profile ( May be a little tricky task, need 3 hours to done)
-- Allow admin of the webiste can do everyting he wants. This part is simple.
-- 
+-Some small sub-task. Will finish tonight and tomorrow 
+- Create Admin page and admin function (4 hours) (leave it for Chenyu)    
+
