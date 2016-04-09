@@ -12,9 +12,9 @@ namespace Login_Registration.Models
         public string email { get; set; }
         public string activity { get; set; }
         public string address1 { get; set; }
+        public string address2 { get; set; }
         public string attendedEvent { get; set; }
         public string phone { get; set; }
-        public string address2 { get; set; }
         public string country { get; set; }
 
         public void Retrieve(String UserId)
