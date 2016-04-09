@@ -34,7 +34,10 @@ namespace Login_Registration.Controllers
             //1. The File Path on the File Server
             //2. The content type MIME type
             //3. The parameter for the file save by the browser
-            return File(filename, contentType,"CCAfrica_Report.pdf");
+            
+            // By using Remove(0,57), I delete 57 characters which are directory to the folder containing pdf files. 
+            //We only keep file name. 
+            return File(filename, contentType,filename.Remove(0,57));
         }
         
         //We can open pdf file within Google Chrome by using this function
